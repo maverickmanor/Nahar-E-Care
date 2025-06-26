@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Nahar E Care</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      height: auto;
+      background-color: #344A86;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 120px 40px 60px;
+      background-color: #f2f2f2;
+      flex-wrap: wrap;
+    }
+
+    .contact-details {
+      flex: 1;
+      max-width: 350px;
+      text-align: left;
+      color: #344A86;
+    }
+
+    .contact-details h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .contact-form {
+      flex: 2;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #344A86;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #2c3a70;
+    }
+    .contact-section {
+  padding: 120px 40px 60px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contact-details {
+  flex: 1;
+  max-width: 350px;
+  text-align: left;
+  color: #344A86;
+}
+
+.contact-form {
+  flex: 2;
+  max-width: 600px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #344A86;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #2c3a70;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .contact-details, .contact-form {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contact-details {
+    margin-bottom: 30px;
+  }
+}
+
+
+    footer {
+      background-color: #344A86;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-details, .contact-form {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .contact-details {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <!-- Contact Section -->
+<section class="contact-section">
+  <h2 style="text-align: center; width: 100%; font-size: 36px; color: #344A86;">Contact Us</h2>
+
+  <div class="contact-wrapper">
+    <div class="contact-details">
+      <p style="font-size: 25px;"><strong>Md Mahamudul Hasan</strong> </p>
+      <p style="font-size: 22px;"><strong>Email:</strong> <a href="mailto:maverick@visualmanor.com" style="color: #344A86;">maverick@visualmanor.com</a></p>
+      <p style="font-size: 22px;"><strong>Mobile:</strong> (+88) 01719394974</p>
+    </div>
+
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/moqgykwy" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="form-status" style="color: green; display: none; margin-top: 10px;">Message sent successfully!</p>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nahar E Carre. All rights reserved.</p>
+  </footer>
+
+  <!-- FormScript -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        status.style.display = 'block';
+        status.innerText = "Message sent successfully!";
+        form.reset();
+      } else {
+        status.innerText = "Oops! Something went wrong.";
+        status.style.color = 'red';
+        status.style.display = 'block';
+      }
+    });
+  </script>
+
+</body>
+</html>
